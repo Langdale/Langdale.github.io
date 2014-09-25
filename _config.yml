@@ -1,11 +1,9 @@
-# In _config.yml
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "posts"
-      title: "Blogging Like a Hacker2"
-      author: "Mr. Hyde"
-      category: "post"
+#
+# Flags to customize site
+#
+
+title: Blogging like a hacker 2
+author: Markh
+
+
+description: hacker from Somewhere
