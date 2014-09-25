@@ -2,4 +2,6 @@
 layout: default
 ---
 
-  "Testing YAML Front Block" {{ site.author }}
+{% for post in site.posts limit: 10 %}
+<p>Langdale.</p>
+{% endfor %}
