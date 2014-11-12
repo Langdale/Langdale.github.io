@@ -5,44 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
 
-    <title>Langdale &ndash; Projects, Information &ndash; Stuff</title>
-
-    
-
-
+<title>Langdale &ndash; Projects, Information &ndash; Stuff</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-
-
-
 <!--[if lte IE 8]>
   
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
   
 <![endif]-->
 <!--[if gt IE 8]><!-->
-  
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-  
 <!--<![endif]-->
-
-
-
-  
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="/combo/1.17.16?/css/layouts/blog-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="css/layouts/blog.css">
     <!--<![endif]-->
-  
-
-
-
-
-    
 <!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 <![endif]-->
+
+<script type="text/javascript" src="javascripts/quotes.js"></script>
 
 </head>
 <body>
@@ -174,11 +157,16 @@
 
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                <script>
+	                printquote();
+                </script>
+                <!--
                     <ul>
                         <li><a href="http://purecss.io/">About</a></li>
                         <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
                         <li><a href="http://github.com/yahoo/pure/">GitHub</a></li>
                     </ul>
+                -->
                 </div>
             </div>
         </div>
