@@ -4,28 +4,13 @@ layout: blog
 
 {% for post in site.posts limit: 10 %}
                 <section class="post">
-                    <header class="post-header">
-                        <img class="post-avatar" alt="Mark Heard&#x27;s avatar" height="48" width="48" src="https://dl.dropboxusercontent.com/u/4122397/avatar596_0.gif">
-
                         <h2 class="post-title">{{ post.title }}</h2>
-						<h4>{{ post.date | date_to_long_string }}</h4>
-<!--
-                        <p class="post-meta">
-                            By <a class="post-author" href="#">Mark Heard</a> under <a class="post-category post-category-js" href="#">Google maps</a>
-                        </p>
--->						
-                    </header>
-
+			<h4>{{ post.date | date_to_long_string }}</h4>
                     <div class="post-description">
-					    <p>
-						<a href="{{ post.url }}">Read Post</a>
-						</p>	
-<!--					
-                        <p>
-                            Created a couple of google map traffic layer pages to be able to instantly go to an area and see current traffic, handy for specific areas, routes or commutes. Currently just residing on the left menu until I work on the page design of these a bit more.
-                        </p>
-                    </div>
--->
+			<p>
+			<a href="{{ post.url }}">Read Post</a>
+			</p>	
+
                 </section>
 
 <!--
