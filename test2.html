@@ -40,49 +40,16 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                <h1 class="content-subhead">Pinned Post</h1>
-
-                <!-- A single blog post -->
-                <section class="post">
-                    <header class="post-header">
-                        <img class="post-avatar" alt="Mark Heard&#x27;s avatar" height="48" width="48" src="https://dl.dropboxusercontent.com/u/4122397/avatar596_0.gif">
-
-                        <h2 class="post-title">Langdale - Github</h2>
-
-                        <p class="post-meta">
-                            By <a href="#" class="post-author">Mark Heard</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>
-                            A Github web project for general information, projects and trying stuff out, things may or may not work. Currently using <a href="http://purecss.io/layouts/">pure css</a> blog layout
-                        </p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="posts">
-                <h1 class="content-subhead">Recent Posts</h1>
-
-                <section class="post">
-                    <header class="post-header">
-                        <img class="post-avatar" alt="Mark Heard&#x27;s avatar" height="48" width="48" src="https://dl.dropboxusercontent.com/u/4122397/avatar596_0.gif">
-
-                        <h2 class="post-title">Google maps traffic layer</h2>
-
-                        <p class="post-meta">
-                            By <a class="post-author" href="#">Mark Heard</a> under <a class="post-category post-category-js" href="#">Google maps</a>
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>
-                            Created a couple of google map traffic layer pages to be able to instantly go to an area and see current traffic, handy for specific areas, routes or commutes. Currently just residing on the left menu until I work on the page design of these a bit more.
-                        </p>
-                    </div>
-                </section>
-
+            {% for post in site.posts limit: 10 %}
+    		<h2 class="post-title">{{ post.title }}</h2>
+    		<h4>{{ post.date | date_to_long_string }}</h4>
+    		<p>
+      		<a href="{{ post.url }}">Read Post</a>
+    		</p>
+  		</div>
+		</div>
+		{% endfor %}
+	</div>
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal pure-menu-open">
                 <script>
