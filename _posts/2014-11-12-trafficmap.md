@@ -1,4 +1,6 @@
 ---
+title: GoogleMaps - Traffic Layer
+layout: blog
 ---
 
 Created a couple of google map traffic layer pages to be able to instantly go to an area and see current traffic, 
