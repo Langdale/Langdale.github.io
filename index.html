@@ -1,74 +1,98 @@
----
-layout: page
-tagline:
----
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Langdale, general projects, information and testing">
+<title>Langdale &ndash; Projects, Information &ndash; Stuff</title>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+<link rel="stylesheet" href="css/layouts/blog.css">
 
-{% for post in paginator.posts %}
+<script type="text/javascript" src="javascripts/quotes.js"></script>
 
-<article class="home">
+</head>
+<body>
 
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Langdale</h1>
+            <h2 class="brand-tagline">Projects & Information</h2>
 
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="#">Home</a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="pure-button" href="http://langdale.github.io/chester_t.html">Chester Traffic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="http://langdale.github.io/knutsford_t.html">Knutsford Commute</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
-  <div>
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-  </div>
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
 
-</article>
-{% endfor %}
-<hr/>
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Mark Heard&#x27;s avatar" height="48" width="48" src="https://dl.dropboxusercontent.com/u/4122397/avatar596_0.gif">
 
-<ul class="pager"> 
+                        <h2 class="post-title">Langdale - Github</h2>
 
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
-    {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
-    {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  {% endif %}
-  
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Mark Heard</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                        </p>
+                    </header>
 
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  {% endif %}
+                    <div class="post-description">
+                        <p>
+                            A Github web project for general information, projects and trying stuff out, things may or may not work. Currently using <a href="http://purecss.io/layouts/">pure css</a> blog layout
+                        </p>
+                    </div>
+                </section>
+            </div>
 
-</ul>
+            <div class="posts">
+                <h1 class="content-subhead">Recent Posts</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Mark Heard&#x27;s avatar" height="48" width="48" src="https://dl.dropboxusercontent.com/u/4122397/avatar596_0.gif">
+
+                        <h2 class="post-title">Google maps traffic layer</h2>
+
+                        <p class="post-meta">
+                            By <a class="post-author" href="#">Mark Heard</a> under <a class="post-category post-category-js" href="#">Google maps</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Created a couple of google map traffic layer pages to be able to instantly go to an area and see current traffic, handy for specific areas, routes or commutes. Currently just residing on the left menu until I work on the page design of these a bit more.
+                        </p>
+                    </div>
+                </section>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                <script>
+	                printquote();
+                </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
