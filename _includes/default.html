@@ -44,13 +44,13 @@
 				<span class="icon-bar"></span>
 			</button>
 			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-				<i class="fa fa-github"></i>
+			<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/ch_t.html">
+				<i class="fa fa-road"></i>
 			</a>
 			{% endif %}
 			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter"></i>
+			<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/ch_t.html">
+				<i class="fa fa-road"></i>
 			</a>
 			{% endif %}
 			{% if site.author.email %}
@@ -59,7 +59,7 @@
 			</a>
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+				<img src="../assets/media/langdale.png?s=35" class="img-circle" />
 				{{ site.title }}
 			</a>
 		</div>
