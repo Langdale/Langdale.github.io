@@ -2,7 +2,7 @@ $(function(){
 
 	var note = $('#note'),
 		ts = new Date(2015,11 ,25),
-		newYear = true;
+		Tobys = true;
 
 	if((new Date()) > ts){
 		// The new year is here! Count towards something else.
@@ -22,8 +22,8 @@ $(function(){
 			message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
 			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
 
-			if(newYear){
-				message += "left until the new year!";
+			if(Tobys){
+				message += "left until Santa visits Toby's house";
 			}
 			else {
 				message += "left to 10 days from now!";
