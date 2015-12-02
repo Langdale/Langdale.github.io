@@ -15,8 +15,7 @@
 
 
 html{
-	<-- background:url('../img/tile_bg.jpg') #b0b0b0; -->
-	background:url('../img/page_bg_center.jpg') no-repeat center center;
+	background:url('../img/tile_bg.jpg') #b0b0b0;
 	position:relative;
 }
 
@@ -47,7 +46,7 @@ section, footer{
 -----------------------------*/
 
 #note{
-	color: #666666;
+	color: #fff;
 	font-size: 12px;
 	margin: 0 auto;
 	padding: 4px;
