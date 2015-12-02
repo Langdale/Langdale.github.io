@@ -16,6 +16,7 @@
 
 html{
 	<-- background:url('../img/tile_bg.jpg') #b0b0b0; -->
+	background:url('../img/page_bg_center.jpg') no-repeat center center;
 	position:relative;
 }
 
