@@ -20,7 +20,7 @@ html{
 }
 
 body{
-	background:url('../img/Marvel.jpg') no-repeat center center;
+	/* background:url('../img/Marvel.jpg') no-repeat center center; */
 	background-size: 800px 639px
 	/* min-height: 600px; */
         padding: 200px 0 0;
