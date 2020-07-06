@@ -49,6 +49,7 @@ tagline:
           <title></title>
       </head>
       <body>
+          <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
           <div id="map">
               <div id="popup" class="ol-popup">
                   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
