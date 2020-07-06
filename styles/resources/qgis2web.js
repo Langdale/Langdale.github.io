@@ -686,9 +686,9 @@ map.on("rendercomplete", function(evt) {
         //olAttribution.innerHTML = '<a href="https://openlayers.org/">OpenLayers</a> &middot; ';
         //var qgisAttribution = document.createElement('li');
         //qgisAttribution.innerHTML = '<a href="https://qgis.org/">QGIS</a>';
-        attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
-        attributionList.insertBefore(olAttribution, firstLayerAttribution);
-        attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
+        //attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
+        //attributionList.insertBefore(olAttribution, firstLayerAttribution);
+        //attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
         attributionComplete = true;
     }
 })
