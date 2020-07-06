@@ -12,7 +12,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Langdale
+      title: Projects & Things
 
 description: Stylish Jekyll Theme
 author:
@@ -20,7 +20,7 @@ author:
   email: heard298@gmail.com
   github: Langdale
   twitter: 
-  bio: Projects & Stuff
+  bio: A dybll site for stuff
   email_md5: 52a4a75196521a363206b8b20513d57a
 
 rss_path: feed.xml
