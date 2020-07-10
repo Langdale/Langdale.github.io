@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_EntireRoutetracks_1 = function(feature, resolution){
+var style_EntireRoutewaypoints_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,12 +16,13 @@ var style_EntireRoutetracks_1 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 8;
     var offsetY = 3;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,5,55,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 4}),
+        image: new ol.style.Circle({radius: 4.0 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(7,94,255,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_EntireRoutetracks_1 = function(feature, resolution){
+var style_Progresstracks_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,7 @@ var style_EntireRoutetracks_1 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,5,55,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 4}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,250,8,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 4}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

@@ -32,7 +32,7 @@ var map = new ol.Map({
 });
 
 
-map.getView().fit([-537295.566088, 6691558.408404, 76502.526809, 7551221.718570], map.getSize());
+map.getView().fit([-917305.563868, 6641067.158040, 370157.929532, 7707754.059842], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -354,15 +354,15 @@ map.on("rendercomplete", function(evt) {
         var attribution = document.getElementsByClassName('ol-attribution')[0];
         var attributionList = attribution.getElementsByTagName('ul')[0];
         var firstLayerAttribution = attributionList.getElementsByTagName('li')[0];
-        //var qgis2webAttribution = document.createElement('li');
-        //qgis2webAttribution.innerHTML = '<a href="https://github.com/tomchadwin/qgis2web">qgis2web</a> &middot; ';
-        //var olAttribution = document.createElement('li');
-        //olAttribution.innerHTML = '<a href="https://openlayers.org/">OpenLayers</a> &middot; ';
-        //var qgisAttribution = document.createElement('li');
-        //qgisAttribution.innerHTML = '<a href="https://qgis.org/">QGIS</a>';
-        //attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
-        //attributionList.insertBefore(olAttribution, firstLayerAttribution);
-        //attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
+        var qgis2webAttribution = document.createElement('li');
+        qgis2webAttribution.innerHTML = '<a href="https://github.com/tomchadwin/qgis2web">qgis2web</a> &middot; ';
+        var olAttribution = document.createElement('li');
+        olAttribution.innerHTML = '<a href="https://openlayers.org/">OpenLayers</a> &middot; ';
+        var qgisAttribution = document.createElement('li');
+        qgisAttribution.innerHTML = '<a href="https://qgis.org/">QGIS</a>';
+        attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
+        attributionList.insertBefore(olAttribution, firstLayerAttribution);
+        attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
         attributionComplete = true;
     }
 })
