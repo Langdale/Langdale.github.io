@@ -21,7 +21,7 @@ var style_EntireRoutetracks_1 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,5,55,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 4}),
+        stroke: new ol.style.Stroke({color: 'rgba(1,47,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
