@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Progresswaypoints_3 = function(feature, resolution){
+var style_progresstracks_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,13 +16,12 @@ var style_Progresswaypoints_3 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 8;
     var offsetY = 3;
-    var placement = 'point';
+    var placement = 'line';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 7.2 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(5,75,250,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,254,84,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

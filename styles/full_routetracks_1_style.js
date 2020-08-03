@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_ReturnRoutetracks_3 = function(feature, resolution){
+var style_full_routetracks_1 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
