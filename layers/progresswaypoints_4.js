@@ -7,6 +7,7 @@ var json_progresswaypoints_4 = {
 { "type": "Feature", "properties": { "name": "Barclaycard Northampton", "elevation": null, "comment": null, "description": null, "source": null, "url": null, "url name": null }, "geometry": { "type": "Point", "coordinates": [ -0.8738669, 52.2194894 ] } },
 { "type": "Feature", "properties": { "name": "Barclays Radbroke Technology Centre", "elevation": null, "comment": null, "description": null, "source": null, "url": null, "url name": null }, "geometry": { "type": "Point", "coordinates": [ -2.3490505, 53.2717083 ] } },
 { "type": "Feature", "properties": { "name": "Barclays Campus Glasgow", "elevation": null, "comment": null, "description": null, "source": null, "url": null, "url name": null }, "geometry": { "type": "Point", "coordinates": [ -4.2614488, 55.8550903 ] } },
-{ "type": "Feature", "properties": { "name": "Barclays Bank", "elevation": null, "comment": null, "description": null, "source": null, "url": null, "url name": null }, "geometry": { "type": "Point", "coordinates": [ -3.190873, 55.953031 ] } }
+{ "type": "Feature", "properties": { "name": "Barclays Bank", "elevation": null, "comment": null, "description": null, "source": null, "url": null, "url name": null }, "geometry": { "type": "Point", "coordinates": [ -3.190873, 55.953031 ] } },
+{ "type": "Feature", "properties": { "name": "Barclays Sunderland Contact Centre", "elevation": null, "comment": null, "description": null, "source": null, "url": null, "url name": null }, "geometry": { "type": "Point", "coordinates": [ -1.4373657, 54.8625148 ] } }
 ]
 }
